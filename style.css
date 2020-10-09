@@ -11,11 +11,185 @@ nav {
 	text-align: right;
 }
 
+title {
+	position: absolute;
+	left: 0%;
+	right: 80.27%;
+	top: 20%;
+	bottom: 0%;
 
-/*this resizes all images though, need to change later*/
-img {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+/* editing the links */
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:link.shop {
+	background-color: #487AC5;
+	position: absolute;
+	width: 256px;
+	height: 81px;
+	left: 592px;
+	top: 550px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+a:visited.shop {
+	color: #FFFFFF;
+}
+
+/*nav bar*/
+img.cart {
+	position: absolute;
+	left: 97.1%;
+	right: 0%;
+	top: 0%;
+	bottom: 57.65%;
 	max-width:20px;
 	max-height: 20px;
 	width: auto;
 	height:auto;
 }
+
+.products {
+	position: absolute;
+	left: 67.55%;
+	right: 25.93%;
+	top: 11.76%;
+	bottom: 25.88%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.gallery {
+	position: absolute;
+	left: 78.42%;
+	right: 15.06%;
+	top: 11.76%;
+	bottom: 25.88%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.about {
+	position: absolute;
+	left: 86.71%;
+	right: 6.76%;
+	top: 11.76%;
+	bottom: 25.88%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+
+/* footer formatting */
+footer {
+	position: absolute;
+	width: 314px;
+	height: 323px;
+	left: 38px;
+	top: 668px;
+}
+
+#contact {
+	position: absolute;
+	left: 47.77%;
+	right: -12.42%;
+	top: 0%;
+	bottom: 59.13%;
+}
+
+#visit {
+	position: absolute;
+	left: 0%;
+	right: 47.77%;
+	top: 0%;
+	bottom: 0%;
+}
+
+
+/*Main page*/
+img.gallery_1 {
+	position: absolute;
+	width: 981px;
+	height: 306px;
+	left: 222px;
+	top: 195px;
+}
+
+img.feather {
+	position: absolute;
+	width: 298px;
+	height: 126px;
+	left: 73px;
+	top: 114px;
+}
+
+.label1 {
+	position: absolute;
+	width: 215px;
+	height: 27px;
+	left: 169px;
+	top: 456px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #000000;
+
+	transform: rotate(-90deg);
+}
+
+.label2 {
+	position: absolute;
+	width: 292px;
+	height: 27px;
+	left: 222px;
+	top: 523px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+
+
+
+
+
