@@ -1,28 +1,28 @@
 
-header {
-	font-family: 'Roboto', sans-serif;
-}
-
 body {
 	font-family: 'Lato', sans-serif;
 }
 
-nav {
-	text-align: right;
+.top {
+	height: 85px;
+	left: 73px;
+	top: 38px;
+	padding-top: 30px;
 }
 
-title {
-	position: absolute;
-	left: 0%;
-	right: 80.27%;
-	top: 20%;
-	bottom: 0%;
+header h1{
+	display: inline;
+	float: left;
+	
+	margin: 0;
+	font-family: Roboto, sans-serif;
+}
 
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 36px;
-	line-height: 42px;
+nav{
+	display: inline;
+	float: right;
+	padding-left: 0;
+	margin-bottom: 0;
 }
 
 /* editing the links */
@@ -42,15 +42,19 @@ a:link.shop {
 	height: 81px;
 	left: 592px;
 	top: 550px;
+
 	font-family: Lato;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
+
 	line-height: 22px;
-	display: flex;
+	display: inline-flex;
+
 	align-items: center;
-	text-align: center;
 	color: #FFFFFF;
+
+	justify-content: center;
 }
 
 a:visited.shop {
@@ -59,57 +63,43 @@ a:visited.shop {
 
 /*nav bar*/
 img.cart {
-	position: absolute;
-	left: 97.1%;
-	right: 0%;
-	top: 0%;
-	bottom: 57.65%;
 	max-width:20px;
 	max-height: 20px;
 	width: auto;
 	height:auto;
+	padding-right: 20px;
+	padding-left: 30px;
 }
 
 .products {
-	position: absolute;
-	left: 67.55%;
-	right: 25.93%;
-	top: 11.76%;
-	bottom: 25.88%;
-
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+	padding-right: 30px;
+
 }
 
 .gallery {
-	position: absolute;
-	left: 78.42%;
-	right: 15.06%;
-	top: 11.76%;
-	bottom: 25.88%;
-
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+
 }
 
 .about {
-	position: absolute;
-	left: 86.71%;
-	right: 6.76%;
-	top: 11.76%;
-	bottom: 25.88%;
-
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 
@@ -160,8 +150,8 @@ img.feather {
 	position: absolute;
 	width: 215px;
 	height: 27px;
-	left: 169px;
-	top: 456px;
+	left: 100px;
+	top: 350px;
 
 	font-family: Roboto;
 	font-style: normal;
@@ -172,6 +162,8 @@ img.feather {
 	color: #000000;
 
 	transform: rotate(-90deg);
+
+	padding-bottom: 20px;
 }
 
 .label2 {
@@ -447,9 +439,9 @@ and top 420 so now it's not even*/
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 	color: #FFFFFF;
 }
 
