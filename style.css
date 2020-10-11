@@ -188,6 +188,400 @@ img.feather {
 	line-height: 16px;
 }
 
+/*Products page*/
+.bed {
+	position: absolute;
+	width: 720px;
+	height: 281px;
+	left: 0px;
+	top: 139px;
+}
+
+.couch {
+	position: absolute;
+	width: 720px;
+	height: 281px;
+	left: 720px;
+	top: 139px;
+}
+
+/*having troubles with this one, after rotating it cut off to the side so it's not aligned anymore, should be left 0
+and top 420 so now it's not even*/
+.pouf {
+	transform: rotate(-90deg);
+	position: absolute;
+	width: 281px;
+	height: 720px;
+	left: 220px;
+	top: 200px;
+}
+
+.round {
+	position: absolute;
+	width: 720px;
+	height: 281px;
+	left: 720px;
+	top: 420px;
+}
+
+.bedlabel {
+	position: absolute;
+	width: 527px;
+	height: 110px;
+	left: 97px;
+	top: 280px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.couchlabel {
+	position: absolute;
+	width: 527px;
+	height: 110px;
+	left: 831px;
+	top: 280px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.pouflabel {
+	position: absolute;
+	width: 527px;
+	height: 102px;
+	left: 97px;
+	top: 561px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.roundlabel {
+	position: absolute;
+	width: 527px;
+	height: 110px;
+	left: 831px;
+	top: 553px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+/* Couch Detail Page */
+#couch-detail {
+	position: absolute;
+	width: 963px;
+	height: 530px;
+	left: 234px;
+	top: 155px;
+	overflow-y: scroll;
+	background-color: #FFFFFF
+}
+
+#couch-detail-img {
+	position: absolute;
+	width: 324px;
+	height: 465px;
+	left: 81px;
+	top: 32px;
+}
+
+#couch-detail h3{
+	position: absolute;
+	width: 280px;
+	height: 56px;
+	left: 473px;
+	top: 32px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	margin:0;
+}
+
+#couch-detail-text {
+	position: absolute;
+	width: 409px;
+	height: 464px;
+	left: 473px;
+	top: 347px;
+
+	font-family: Lato;
+	font-style: normal;
+}
+
+#couch-detail-text p {
+		font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+#couch-detail-text h4 {
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0;
+}
+
+#couch-detail-text h6 {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0;
+}
+
+.duck {
+	position: absolute;
+	width: 56px;
+	height: 52px;
+	left: 495px;
+	top: 198px;
+}
+
+.duckcaption {
+	position: absolute;
+	width: 93px;
+	height: 21px;
+	left: 477px;
+	top: 261px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 11px;
+	text-align: center;
+	margin: 0;
+}
+
+.hypo {
+	position: absolute;
+	width: 56px;
+	height: 52px;
+	left: 579px;
+	top: 198px;
+}
+
+.hypocaption {
+	position: absolute;
+	width: 93px;
+	height: 21px;
+	left: 563px;
+	top: 259px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 11px;
+	text-align: center;
+	margin: 0;
+}
+
+.memory {
+	position: absolute;
+	width: 56px;
+	height: 52px;
+	left: 665px;
+	top: 198px;
+}
+
+.memorycaption {
+	position: absolute;
+	width: 93px;
+	height: 21px;
+	left: 647px;
+	top: 259px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 11px;
+	text-align: center;
+	margin: 0;
+}
+
+.qty {
+	position: absolute;
+	width: 74px;
+	height: 32px;
+	left: 492px;
+	top: 294px;
+}
+
+.add {
+	position: absolute;
+	width: 125px;
+	height: 34px;
+	left: 609px;
+	top: 289px;
+	background-color: #487AC5;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.special {
+	position: absolute;
+	width: 39px;
+	height: 38px;
+	left: 504px;
+	top: 117px;
+
+	background-color: #285718;
+	border-radius: 50%;
+
+}
+
+.specialcaption{
+	position: absolute;
+	width: 93px;
+	height: 21px;
+	left: 477px;
+	top: 168px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 11px;
+	text-align: center;
+	margin: 0;
+}
+
+.denim {
+	background-color: #487AC5;
+	border-radius: 50%;
+
+	position: absolute;
+	width: 39px;
+	height: 38px;
+	left: 585px;
+	top: 117px;
+}
+
+.denimcaption {
+	position: absolute;
+	width: 93px;
+	height: 21px;
+	left: 559px;
+	top: 166px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 11px;
+	text-align: center;
+	margin: 0;
+}
+
+.morning {
+	position: absolute;
+	width: 39px;
+	height: 38px;
+	left: 663px;
+	top: 117px;
+
+	background-color: #F7EDBA;
+	border-radius: 50%;
+}
+
+.morningcaption {
+	position: absolute;
+	width: 93px;
+	height: 21px;
+	left: 640px;
+	top: 166px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 11px;
+	text-align: center;
+	margin: 0;
+}
+
+.rainy {
+	position: absolute;
+	width: 39px;
+	height: 38px;
+	left: 734px;
+	top: 117px;
+
+	background-color: #C4C2CD;
+	border-radius: 50%;
+}
+
+.rainycaption {
+	position: absolute;
+	width: 93px;
+	height: 21px;
+	left: 707px;
+	top: 164px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 11px;
+	text-align: center;
+	margin: 0;
+}
+
+#exit {
+	position: absolute;
+	width: 61px;
+	height: 37px;
+	left: 902px;
+	top: 32px;
+
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+}
+
+
+
+
+
+
 
 
 
