@@ -5,17 +5,27 @@
 	<head>
 	<!-- styles -->
 		<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 		<title>Fluff Stuff</title>
-		<script src="dynam.js"></script>
+
 
 	</head>
 
 <body onload="onCartLoad()">
 
-	<div id="cart-items">
-		<div>Your Cart</div>
-	</div>
+	<h1>Your Cart</h1>
 
+	<div id="cart-items" class="container"></div>
+
+	<p>Total Items: 1</p>
+
+	<input id="checkout" type="button" value="Checkout">
+	<br><br><br>
+	<a href="products.html" id="back">Back to Products</a>
+
+
+	<script src="dynam.js"></script>
 </body>
 
 

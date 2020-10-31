@@ -595,9 +595,50 @@ and top 420 so now it's not even*/
 	opacity: 1;
 }
 
+input[type=button] {
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+#checkout {
+	font-family: Lato;
+	color: #FFFFFF;
+	position: relative;
+	background: #487AC5;
+}
 
 
+#cart-items {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+}
 
+#back {
+	font-family: Lato;
+}
+
+#quant {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+
+	color: #487AC5;
+}
 
 
 
