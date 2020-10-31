@@ -9,6 +9,7 @@
 		<!-- javascript -->
 
 		<title>Fluff Stuff</title>
+		<script src="dynam.js"></script>
 	</head>
 
 	<body>
@@ -20,7 +21,7 @@
 				<a class="products" href="products.html"><b><i>Products</b></i></a>
 				<a class="gallery" href="gallery.html">Gallery</a>
 				<a class="about" href="about_us.html">About Us</a>
-				<img class="cart" src="shopping-cart.png" alt="shoping cart">
+				<a href="cart.html"><img class="cart" src="shopping-cart.png" alt="shoping cart"></a>
 						<!-- Cart icon made by https://www.flaticon.com/free-icon/shopping-cart_833314 "Kiranshastry" -->
 			</nav>
 		</header>
@@ -47,24 +48,31 @@
 
 			<h3> Couch Pillow <br> $35.00</h3>
 
-			<span class="special"></span>
+			<!-- <span class="special"></span> -->
+			<input class="special" type="button" value="After School Special" onclick="update(event)">
 			<p class="specialcaption">After School Special</p>
-			<span class="denim"></span>
+
+			<input class="denim" type="button" value="Cozy Denim" onclick="update(event)">
 			<p class="denimcaption">Cozy Denim</p>
-			<span class="morning"></span>
+
+			<input class="morning" type="button" value="Morning Haze" onclick="update(event)">
 			<p class="morningcaption">Morning Haze</p>
-			<span class="rainy"></span>
+
+			<input class="rainy" type="button" value="Rainy Day" onclick="update(event)">
 			<p class="rainycaption">Rain Day</p>
 
-			<img class="duck" src="Images/duck.jpg" alt="duck down feathers">
+			<img class="duck" src="Images/duck.jpg" alt="Duck Down" onclick="updatetwo(event)">
 			<p class="duckcaption">Duck Down</p>
-			<img class="hypo" src="Images/poly.jpg" alt="hypoallergenic polyblend">
+
+			<img class="hypo" src="Images/poly.jpg" alt="Hypoallergenic Polyblend" onclick="updatetwo(event)">
 			<p class="hypocaption">Hypoallergenic Polyblend</p>
-			<img class="memory" src="Images/memory.jpg" alt="memory foam">
+
+			<img class="memory" src="Images/memory.jpg" alt="Memory Foam" onclick="updatetwo(event)">
 			<p class="memorycaption">Memory Foam</p>
 
 			<p class="qty"> QTY: 1 </p>
-			<p class="add"> ADD TO CART </p>
+
+			<input class="add" type="button" value="Add to Cart" onclick="saveItem()">
 
 			<div id="couch-detail-text">
 				<h4>Product Description</h4>

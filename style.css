@@ -569,8 +569,31 @@ and top 420 so now it's not even*/
 	text-align: center;
 }
 
+/*slider for cart*/
+.slider-container {
+	position: relative;
+}
 
+.slider-container .slider-parent {
+	height: 70vh;
+	max-width: 250px;
+	width: 100%;
+	background: #FFFFFF;
+	position: absolute;
+	left: -250 px;
+	top: 50px;
+	visibility: hidden;
+	transition: .2s all linear;
+	opacity: 0;
+}
 
+.slider-container .slider-parent.active {
+	visibility: visible;
+	pointer-events: inherit;
+	transition: .2s all ease-in-out;
+	left: 0;
+	opacity: 1;
+}
 
 
 
