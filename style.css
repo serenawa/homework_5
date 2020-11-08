@@ -623,6 +623,10 @@ input[type=button] {
 	line-height: 22px;
 }
 
+#desc {
+	display: inline;
+}
+
 #back {
 	font-family: Lato;
 }
@@ -638,8 +642,18 @@ input[type=button] {
 	font-size: 36px;
 
 	color: #487AC5;
+	display: none;
 }
 
+#cartquant {
+	position: relative;
+	display: inline;
+
+	font-family: Lato;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+}
 
 
 

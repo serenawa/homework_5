@@ -1,6 +1,10 @@
 //javascript for adding functionality to the shopping cart
 
 
+//cart number counter
+var itemCount = 0;
+
+
 //get the item
 function itemSave(event){
     console.log("hi", event.target.alt);
@@ -26,8 +30,10 @@ function updatetwo(event) {
     localStorage.setItem("yourMaterial", jsonMaterial); 
 }
 
+//creating array to store the cart items to be used later
+let cartArray = [];
 
-//add to cart - just update cart number here?
+//add to cart - just update cart number here and later add item to div
 function saveItem() {
    console.log("saved");
 
@@ -41,7 +47,21 @@ function saveItem() {
     alert("You must pick a color AND material!");
   }
   else {
+    itemCount = itemCount + 1;
+
+    const count = JSON.stringify(itemCount);
+    localStorage.setItem("yourCount", count);
+    
     document.getElementById("quant").style.display = "inline";
+    document.getElementById("quant").innerText = localStorage.getItem("yourCount");
+    //document.getElementById("quant").innerText = itemCount;
+    console.log(itemCount);
+
+    cartArray.push(yourColor, yourMaterial, yourItem);
+    const json = JSON.stringify(cartArray);
+    localStorage.setItem("yourCart", json);
+
+    console.log(cartArray);
     }
 }
 
@@ -64,6 +84,8 @@ function fullCart(parent, item, color, material) {
     divMaterial.innerHTML = "Material: " + material;
     divContainer.appendChild(divMaterial);
 
+    cartArray.push(divItem, divColor, divMaterial);
+
     return divContainer;
 }
 
@@ -72,24 +94,49 @@ function onCartLoad() {
   const yourColor = localStorage.getItem("yourColor");
   const yourMaterial = localStorage.getItem("yourMaterial");
   const yourItem = localStorage.getItem("yourItem");
-  if (yourColor===null || yourMaterial===null || yourItem===null) {
+
+  const yourCart = localStorage.getItem("yourCart");
+  //if (yourColor===null || yourMaterial===null || yourItem===null) {
+  if (yourCart===null) {
     return;
   }
   else {
     const savedColor = JSON.parse(yourColor);
     const savedMaterial = JSON.parse(yourMaterial);
     const savedItem = JSON.parse(yourItem);
-    console.log("loaded", savedColor, savedMaterial);
-    fullCart(cartContainer, savedItem.item, savedColor.color, savedMaterial.material);
+
+    const savedCart = JSON.parse(yourCart);
+
+    savedCart.forEach((item) => {
+      fullCart(cartContainer, savedItem.item, savedColor.color, savedMaterial.material);
+      cartArray.push(savedItem.item, savedColor.color, savedMaterial.material);
+    });
+
+    ///const savedCart = JSON.parse(yourColor, yourMaterial, yourItem)
+
+    //localStorage.setItem("yourCount", count);
+
+    //document.getElementById("cartquant").innerText = localStorage.getItem("yourCount");
+
+    document.getElementById("cartquant").innerText = localStorage.getItem("yourCount");
+
+
+    console.log("loaded", savedColor, savedMaterial, itemCount, cartArray);
+
+    //fullCart(cartContainer, savedItem.item, savedColor.color, savedMaterial.material);
+    //cartArray.push(savedColor, savedMaterial, savedItem);
   }
 }
 
-
-
-
-function RemoveItem() {
-var name=document.forms.ShoppingList.name.value;
-document.forms.ShoppingList.data.value=localStorage.removeItem(name);
-doShowAll();
+function del() {
+  var oldCount = localStorage.getItem("yourCount");
+  var newCount = oldCount - 1;
+  if (newCount===0) {
+    return;
+  }
+  else {
+  localStorage.setItem("yourCount", newCount);
+  document.getElementById("cartquant").innerText = localStorage.getItem("yourCount");
+  }
 }
 
